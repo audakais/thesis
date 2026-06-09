@@ -1,0 +1,25 @@
+# Installation commands for the pipeline dependencies.
+# Run the commands below (Python 3.10+). Versions are left unpinned.
+
+# Everything in one go:
+pip install numpy pandas scipy scikit-learn matplotlib seaborn imbalanced-learn shap mygene requests lifelines torch torchtuples pycox psycopg2-binary openpyxl pyarrow python-docx
+
+# --- or grouped by purpose ---
+
+# Core scientific stack
+pip install numpy pandas scipy scikit-learn matplotlib seaborn
+
+# Imbalanced learning (SMOTE)
+pip install imbalanced-learn
+
+# Model interpretation, gene-ID mapping and pathway enrichment
+pip install shap mygene requests
+
+# Survival analysis and triage
+pip install lifelines torch torchtuples pycox
+
+# PostgreSQL access
+pip install psycopg2-binary
+
+# File-format support (Excel / Parquet / Word)
+pip install openpyxl pyarrow python-docx
